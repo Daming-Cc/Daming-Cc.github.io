@@ -3422,7 +3422,7 @@
   margin: 0 0.2em;
   transform: rotateZ(-23deg); }
 
-.chem-element {
+.chem-element1 {
   background: rgba(255, 163, 163, 0.09);
   border-radius: .25em;
   box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
@@ -3431,16 +3431,37 @@
   padding: .35em .1em .35em .35em;
   transition-duration: .5s; }
 
-.chem-element:hover {
+.chem-element1:hover {
   box-shadow: 0 0 0.2em 0.2em rgba(255, 255, 255, 0.05);
   transform: translate(1em, 1em); }
 
-.chem-element[element=Uranium]::before {
+.chem-element1[element=Uranium]::before {
+  content: '24';
+  font-size: .45em;
+  vertical-align: -.5em; }
+
+.chem-element1[element="Uranium"]:hover {
+  background: #1dbeda; }
+
+.chem-element2 {
+  background: rgba(255, 163, 163, 0.09);
+  border-radius: .25em;
+  box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  color: #fff;
+  margin-right: .1em;
+  padding: .35em .1em .35em .35em;
+  transition-duration: .5s; }
+
+.chem-element2:hover {
+  box-shadow: 0 0 0.2em 0.2em rgba(255, 255, 255, 0.05);
+  transform: translate(1em, 1em); }
+
+.chem-element2[element=Uranium]::before {
   content: '49';
   font-size: .45em;
   vertical-align: -.5em; }
 
-.chem-element[element="Uranium"]:hover {
+.chem-element2[element="Uranium"]:hover {
   background: #00AA90; }
 
 body {
@@ -3458,7 +3479,10 @@ html {
   line-height: 2em;
   padding: 0.5em 1em; }
 
-.header .greeting .chem-element {
+.header .greeting .chem-element1 {
+  text-decoration: none; }
+
+.header .greeting .chem-element2 {
   text-decoration: none; }
 
 .hosting {
@@ -3492,3 +3516,6 @@ html {
    border-left: 3px solid rgba(56, 102, 104, 0.8);
    line-height: 1.8em;
    padding-left: 1em; }
+.DB{
+  float: right;
+}
